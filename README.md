@@ -1,94 +1,67 @@
-# 👋 Hi, I'm Bhaumik
+# 👋 Bhaumik Yadav
 
-I create AI systems that people actually use.
+**Software Engineer | ML Systems & Backend Architecture**
 
-Not just models—but whole systems that consume data, make decisions, and fit into real workflows.
+*Bridging the gap between Jupyter Notebooks and production environments.*
 
----
-
-## 🧠 What I Do
-
-- Convert vague problem statements into working systems
-- Construct end-to-end AI pipelines (data → model → API → UI)
-- Focus on **performance, reliability and usability**
-- Work at the intersection of **ML, backend systems, and real-world constraints**
+I am a Hybrid Engineer specialized in building high-throughput, memory-efficient AI systems. Currently a **Programmer Analyst at Argusoft** and Lead at **DataVerse (600+ members)**. I build systems where scale, latency, and cost are the primary constraints.
 
 ---
 
-## 🛠️ Selected Work
+## 🚀 Selected Engineering Impact
 
-### ⚖️ Legal Document Retrieval (Quantized RAG System)
-Built a search engine for legal documents where scale and memory were real limitations.
-
-- ~75% lower memory usage with quantization  
-- Search beyond RAM limits using memory mapped indexing  
-- Built async APIs to prevent GPU crashes under load  
-
-**Stack:** Python, FastAPI, CUDA, vector index
-
----
-
-### 🔥 Fire & Smoke Detection (Real Time CV System)
-A system intended for ** real-world deployment uses ** , not offline accuracy.
-
-- Detection accuracy of ~92%.  
-- GPU optimization for up to 40% inference latency reduction  
-- Built for real-time monitoring use cases  
-
-**Stack** YOLOv8, TensorRT, ONNX, FastAPI
-
---- 
-
-### 📊 Prediction of HR attrition (decision support tool)
-Not just a model. A system people can talk to.
-
-- End-to-end pipeline from data analysis to deployed app
-- Added predictions to dashboard for decision making
-- Better visibility into employee risk patterns
-  
-**Stack**: Scikit-lean, Flask, Power BI, JS front end
-
---- 
-
-## ⚙️ How I do my work
-
-- Begin with the problem, not the model  
-- Optimize for constraints (latency, memory, usability)  
-- Ship fast, then refine  
-- Prefer simple systems that work over complex ones that don’t  
+### ⚖️ **plAIntiff: Quantized Legal Retrieval (RAG)**
+*Engineered a memory-optimized RAG pipeline for large-scale legal corpora.*
+- **The "Why":** Standard FP32 embeddings created a memory bottleneck that exceeded available hardware limits.
+- **Engineering Wins:**
+  - Implemented **4-bit scalar quantization**, reducing memory footprint by **75%** with negligible loss in Recall@10.
+  - Optimized retrieval using **Memory Mapped Indexing (Mmap)**, enabling search across datasets larger than available RAM.
+  - Designed an **Async FastAPI gateway** with Redis-backed task queuing to prevent GPU OOM (Out of Memory) errors during concurrent requests.
+- **Stack:** Python, PyTorch, FAISS, FastAPI, Docker.
 
 ---
 
-## 🧩 Tech I Use (When Needed)
-
-**Languages:** Python, Java, JavaScript  
-![Python](https://img.shields.io/badge/-Python-3670A0?logo=python&logoColor=ffdd54) ![Java](https://img.shields.io/badge/-Java-ED8B00?logo=openjdk&logoColor=white) ![JavaScript](https://img.shields.io/badge/-JavaScript-323330?logo=javascript&logoColor=F7DF1E)
-
-**Backend:** FastAPI, Spring Boot, Flask  
-![FastAPI](https://img.shields.io/badge/-FastAPI-005571?logo=fastapi) ![Spring Boot](https://img.shields.io/badge/-SpringBoot-6DB33F?logo=springboot&logoColor=white) ![Flask](https://img.shields.io/badge/-Flask-000000?logo=flask&logoColor=white)
-
-**ML:** PyTorch, TensorFlow, Scikit-learn  
-![PyTorch](https://img.shields.io/badge/-PyTorch-EE4C2C?logo=pytorch&logoColor=white) ![TensorFlow](https://img.shields.io/badge/-TensorFlow-FF6F00?logo=tensorflow&logoColor=white) ![Scikit-learn](https://img.shields.io/badge/-ScikitLearn-F7931E?logo=scikit-learn&logoColor=white)
-
-**Infra:** Docker, AWS/GCP, Redis, PostgreSQL  
-![Docker](https://img.shields.io/badge/-Docker-0db7ed?logo=docker&logoColor=white) ![AWS](https://img.shields.io/badge/-AWS-FF9900?logo=amazon-aws&logoColor=white) ![GCP](https://img.shields.io/badge/-GCP-4285F4?logo=google-cloud&logoColor=white) ![Redis](https://img.shields.io/badge/-Redis-DD0031?logo=redis&logoColor=white) ![PostgreSQL](https://img.shields.io/badge/-PostgreSQL-316192?logo=postgresql&logoColor=white)
-
-(I choose tools for the problem, not the other way around.)
+### 📊 **HR Intelligence: Decision-Support Attrition Pipeline**
+*An end-to-end predictive system for workforce risk management and retention strategy.*
+- **The "Why":** Raw attrition models in notebooks provide zero value to HR managers; they need actionable dashboards that interpret "risk" in real-time.
+- **Engineering Wins:**
+  - **Full-Stack Integration:** Architected a complete pipeline from automated data cleaning to a live **Flask/React** interface, ensuring non-technical stakeholders could interact with model outputs.
+  - **Explainable AI (XAI):** Integrated feature-importance visualization into the dashboard, allowing HR to see *why* an employee was flagged as high-risk (e.g., overtime, tenure, or pay).
+  - **Business Intelligence Sync:** Built a connector for **Power BI** to merge model predictions with existing corporate KPIs for executive-level reporting.
+- **Stack:** Python, Scikit-learn, Flask, Power BI, JavaScript.
 
 ---
 
-## 🎯 Objective
-
-To work on systems in which:
-- the problem is not well defined  
-- the constraints are realistic  
-- the solution is applied indeed  
+### 🔥 **Real-Time CV: Disaster Detection Pipeline**
+*High-concurrency object detection for real-world environmental monitoring.*
+- **Optimization:** Achieved a **40% reduction in inference latency** by migrating models to **TensorRT** and **ONNX** runtimes.
+- **Deployment:** Containerized with Docker for seamless scaling on cloud GPU instances.
+- **Stack:** YOLOv8, TensorRT, ONNX, FastAPI.
 
 ---
 
-## 🌍 Join Me
+## 📊 Technical Arsenal
 
-- LinkedIn: https://www.linkedin.com/in/theprofessional-bhaumik-yadav/
+| Category | Technologies |
+| :--- | :--- |
+| **Languages** | **Python** (High-Performance ML), **Java** (Enterprise Backend/Spring), JavaScript |
+| **ML/Ops** | PyTorch, YOLOv8, LangChain, RAG, TensorRT, Quantization (4-bit/8-bit) |
+| **System Design** | **FastAPI** (Async), **Spring Boot**, Redis, PostgreSQL, Docker, Kubernetes |
+| **Cloud & Infra** | Google Cloud (Cloud Run), AWS, Docker |
+
+---
+
+## 🌍 Community & Leadership
+
+- **Lead @ DataVerse:** Managing a community of **600+ developers**, coordinating technical workshops on RAG architectures and full-stack development.
+- **The "Big Picture" View:** I bring a high-level perspective to system architecture—literally.
+
+---
+
+## 🎯 Contact & Profiles
+
+- **LinkedIn:** [theprofessional-bhaumik-yadav](https://www.linkedin.com/in/theprofessional-bhaumik-yadav/)
+- **GitHub:** [bhaumikmango](https://github.com/bhaumikmango)
 
 ---
 
