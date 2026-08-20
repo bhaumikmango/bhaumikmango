@@ -21,6 +21,18 @@ I am a Hybrid Engineer specialized in building high-throughput, memory-efficient
 
 ---
 
+### 🏥 **RCM Intelligence: 5-Layer Hybrid Claim Denial Engine**
+*A deterministic + reasoning pipeline for automated healthcare claim denial analysis and recovery.*
+- **The "Why":** Pure LLM workflows are cost-prohibitive for high claim volumes, lack deterministic guarantees on regulatory rules, and risk transmitting Protected Health Information (PHI) to cloud APIs.
+- **Engineering Wins:**
+  - **5-Layer Hybrid Architecture:** Engineered a decoupled pipeline combining EDI 835/837 ingestion, deterministic CARC rule pre-analysis, 4-bit quantized semantic search (TurboStore), and local DeepSeek-R1:8B reasoning.
+  - **Zero-Cost Local Inference & PHI Compliance:** Pinned vector search to CPU and served DeepSeek-R1 locally via Ollama, achieving **$0.00 API cost per claim** while guaranteeing 100% on-premise PHI data privacy.
+  - **Consistency & Calibration Guard:** Implemented a rule-conflict override layer (locking verdicts when rule engine confidence ≥ 0.9), achieving **100% classification accuracy** across 39 ground-truth benchmark claims.
+  - **Batch Recovery Clustering:** Applied KMeans clustering on denial feature vectors in Layer 5 to identify systemic payer-procedure denial trends and automate appeal letter generation.
+- **Stack:** Python, DeepSeek-R1 (Ollama), FastAPI, TurboStore (4-bit Quantization), SQLite, Scikit-learn.
+
+---
+
 ### 📊 **HR Intelligence: Decision-Support Attrition Pipeline**
 *An end-to-end predictive system for workforce risk management and retention strategy.*
 - **The "Why":** Raw attrition models in notebooks provide zero value to HR managers; they need actionable dashboards that interpret "risk" in real-time.
